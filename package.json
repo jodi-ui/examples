@@ -1,0 +1,18 @@
+{
+  "name": "jodi-ui-examples",
+  "version": "0.9.0",
+  "dependencies": {
+    "jodi-ui-components": "1.0.0-RC7",
+    "redux": "^3.6.0"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-ts": "^6.0.0-beta.3",
+    "jasmine-core": "^2.4.1",
+    "systemjs": "^0.19.36",
+    "typescript": "^1.8.10",
+    "typings": "^1.3.2"
+  }
+}
