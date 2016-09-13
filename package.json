@@ -2,12 +2,14 @@
   "name": "jodi-ui-examples",
   "version": "0.9.0",
   "dependencies": {
+    "foundation": "^4.2.1-1",
     "jodi-ui-components": "1.0.0-RC7",
     "redux": "^3.6.0"
   },
   "devDependencies": {
     "grunt": "^1.0.1",
     "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-sass": "^1.0.0",
     "grunt-contrib-watch": "^1.0.0",
     "grunt-ts": "^6.0.0-beta.3",
     "jasmine-core": "^2.4.1",

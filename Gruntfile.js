@@ -7,12 +7,30 @@ module.exports = function(grunt) {
                 tsconfig: true
             }
         },
-        watch: {
+        sass: {
             'video-player': {
+                options: {
+                    // style: 'compressed',
+                    sourcemap: 'inline' // auto or inline
+                },
+                files: {
+                    'build/video-player.css': 'video-player/styles/app.scss'
+                }
+            }
+        },
+        watch: {
+            'video-player-ts': {
                 files: [
-                    'video-player/src/**/*.ts'
+                    'video-player.ts',
+                    'video-player/**/*.ts'
                 ],
                 tasks: ['ts:video-player']
+            },
+            'video-player-styles': {
+                files: [
+                    'video-player/**/*.scss'
+                ],
+                tasks: ['sass:video-player']
             }
         }
     });
@@ -20,10 +38,11 @@ module.exports = function(grunt) {
 
     //
     grunt.loadNpmTasks('grunt-ts');
+    grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
 
     //
-    grunt.registerTask('build-video-player', ['ts:video-player']);
+    grunt.registerTask('build-video-player', ['ts:video-player', 'sass:video-player']);
     grunt.registerTask('build', ['build-video-player']);
 
     // Default task(s).
