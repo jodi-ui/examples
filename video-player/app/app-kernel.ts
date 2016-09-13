@@ -14,10 +14,7 @@ export class AppKernel {
 
     private initializeComponents() {
         const refreshUI = () => render(document.querySelector('#app'), () => {
-            appComponent(this.services.store.getState(), {
-                playback: this.actions.playback,
-                mediaLoading: this.actions.mediaLoading
-            });
+            appComponent(this.services.store.getState(), this.actions);
         });
 
         this.services.store.subscribe(refreshUI);
