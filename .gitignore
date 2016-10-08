@@ -1,0 +1,8 @@
+/.idea
+/.tscache
+/.sass-cache
+/typings
+/build
+/node_modules
+/video-player-ideas
+.DS_Store
