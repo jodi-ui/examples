@@ -1,0 +1,10 @@
+{
+  "name": "jodi-ui-dom",
+  "globalDependencies": {
+    "chai": "registry:dt/chai#3.4.0+20160601211834",
+    "core-js": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/25e18b592470e3dddccc826fde2bb8e7610ef863/core-js/core-js.d.ts",
+    "incremental-dom": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/f0a8d77e37c6de6e18686573d40e54f6da0af41e/incremental-dom/incremental-dom.d.ts",
+    "mocha": "registry:dt/mocha#2.2.5+20160720003353",
+    "selenium-webdriver": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/36d40a63a05b5cb3413737fbdf7c9a2a26f211fd/selenium-webdriver/selenium-webdriver.d.ts"
+  }
+}

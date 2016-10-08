@@ -1,0 +1,39 @@
+controls-component {
+    background: lightblue;
+    display: table;
+    width: 100%;
+    padding: 1rem;
+
+    .wrapper {
+        display: table-row;
+    }
+
+    .buttons-container,
+    .progress-bar-container,
+    .loader-container {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+    }
+
+    .buttons-container,
+    .loader-container {
+        width: 1px;
+        button {
+            margin: 0 1rem;
+            white-space: nowrap;
+        }
+    }
+
+    .progress-bar-container {
+        width: auto;
+
+        playback-progress-bar-component {
+            width: 100%;
+            cursor: pointer;
+            display: block;
+            margin: 0;
+            border: 1px solid black;
+        }
+    }
+}
